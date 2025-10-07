@@ -19,7 +19,6 @@ public class InsertionSort {
             tracker.incrementArrayAccess(); // read key
             tracker.incrementComparisons(); // compare key with array[j]
 
-            // 🧠 Optimization: stop early if already in order
             if (array[j] <= key) {
                 tracker.incrementArrayAccess(); // array[j]
                 continue;
